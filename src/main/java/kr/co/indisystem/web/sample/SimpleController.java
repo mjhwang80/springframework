@@ -1,4 +1,4 @@
-package web.sample;
+package kr.co.indisystem.web.sample;
 
 
 import org.springframework.stereotype.Controller;
@@ -6,6 +6,7 @@ import org.springframework.util.ClassUtils;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 @Controller
@@ -21,6 +22,8 @@ public class SimpleController {
     public String index(){
         return "index";
     }
+
+
 
 
 }
